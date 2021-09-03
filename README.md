@@ -2,7 +2,7 @@
     <img src="logo.png">
 </div>
 
-Tool to download complete directories from a Github repository.
+Download individual directorys from GitHub repository
 
 # Installation
 1. Download latest release [HERE](https://github.com/Jalkhov/octodir/releases/latest)
