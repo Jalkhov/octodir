@@ -5,12 +5,13 @@
 Tool to download complete directories from a Github repository.
 
 # Installation
-
-```
-$ git clone https://github.com/Jalkhov/Octodir.git
-$ cd Octodir
-$ pip3 setup.py install
-```
+1. Download latest release [HERE](https://github.com/Jalkhov/octodir/releases/latest)
+2. Extract the file and enter the directory
+3. Now in the console type
+    ```
+    $ pip3 setup.py install
+    ```
+4. And press Enter
 
 # Use
 
