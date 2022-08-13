@@ -9,7 +9,7 @@ Download individual directorys from GitHub repository
 2. Extract the file and enter the directory
 3. Now in the console type
     ```
-    $ pip3 setup.py install
+    $ python setup.py install
     ```
 4. And press Enter
 
