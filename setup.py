@@ -1,7 +1,6 @@
 import os
 import sys
 
-from octodir import __version__
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -15,24 +14,19 @@ with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 setup(
     name="Octodir",
-    version=__version__,
-    description="Tool for download directorys from GitHub repository",
+    version="0.1",
+    description="Tool for download directorys from a GitHub repository",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Jalkhov/octodir",
     author="Pedro Torcatt",
     author_email="pedrotorcattsoto@gmail.com",
     classifiers=[
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python :: 3",
         "Natural Language :: English",
         "Environment :: Console",
         "License :: OSI Approved :: MIT License",
-
     ],
     keywords="github directory download",
     packages=["octodir"],
