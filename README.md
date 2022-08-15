@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="logo.png">
+    <img src="https://raw.githubusercontent.com/Jalkhov/octodir/main/logo.png">
 </div>
 
 Tool for downloading directories from Github repositories.
