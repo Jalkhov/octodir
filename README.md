@@ -2,16 +2,12 @@
     <img src="logo.png">
 </div>
 
-Download individual directorys from GitHub repository
+Tool for downloading directories from Github repositories.
 
 # Installation
-1. Download latest release [HERE](https://github.com/Jalkhov/octodir/releases/latest)
-2. Extract the file and enter the directory
-3. Now in the console type
-    ```
-    $ python setup.py install
-    ```
-4. And press Enter
+  ```
+  $ pip install octodir
+  ```
 
 # Use
 

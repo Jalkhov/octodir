@@ -9,13 +9,17 @@ if sys.argv[-1] == "publish":
     os.system("python setup.py sdist")
     os.system("twine upload dist/* --skip-existing")
     sys.exit()
+elif sys.argv[-1] == "test":
+    os.system("python setup.py sdist")
+    os.system("twine upload -r testpypi dist/* --skip-existing")
+    sys.exit()
 
 with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 setup(
-    name="Octodir",
-    version="0.1",
-    description="Tool for download directorys from a GitHub repository",
+    name='octodir',
+    version="1.0.0",
+    description="Tool for downloading directories from Github repositories",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Jalkhov/octodir",
