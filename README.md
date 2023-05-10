@@ -4,8 +4,6 @@
 
 Tool for downloading directories from Github repositories.
 
-ALERT: Not authenticated requests have limits, fixing for add API Key support.
-
 # Installation
   ```
   $ pip install octodir
