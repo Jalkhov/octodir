@@ -25,6 +25,7 @@ $ octodir
   * **Example:** `https://github.com/Jalkhov/octodir/tree/stable/octodir`
 * **Output folder**: Absolute path of the output directory
   * You can enter a dot to download in the current working directory
+* **API key**: Personal Github Token for prevent requests limit
 
 ## In code
 
@@ -33,8 +34,9 @@ from octodir import Octodir
 
 target = 'https://github.com/Jalkhov/Octodir/tree/stable/octodir'
 folder = '.' # Current working directory
+api_key = '<PERSONAL_GITHUB_TOKEN>'
 
-Octo = Octodir(target, folder)
+Octo = Octodir(target, folder, api_key=api_key)
 Octo.dowload_folder()
 ```
 
