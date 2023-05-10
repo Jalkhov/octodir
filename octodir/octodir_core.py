@@ -28,11 +28,11 @@ def mkdirs(path):
 
 class Octodir(object):
 
-    def __init__(self, folder_url, output_folder):
+    def __init__(self, folder_url, output_folder, api_key):
         super(Octodir, self).__init__()
         self.folder_url = folder_url
         self.output_folder = output_folder
-
+        self.headers = {"Authorization": f"Token {api_key}"}
         self.repo = None
         self.target_dir = None
         self.branch = None
@@ -48,7 +48,7 @@ class Octodir(object):
 
     def __get_repo_tree(self):
         api = requests.get(
-            api_urls.recursive.format(self.repo, self.branch)).text
+            api_urls.recursive.format(self.repo, self.branch), headers=self.headers).text
         files = json.loads(api)
 
         output = []
@@ -91,7 +91,7 @@ class Octodir(object):
     def __api_response(self):
         repo_data = self.__scrutinize_url(self.folder_url)
         api = requests.get(api_urls.no_recursive.format(
-            repo_data.repo, repo_data.branch)).text
+            repo_data.repo, repo_data.branch), headers=self.headers).text
         response = json.loads(api)
 
         return response
